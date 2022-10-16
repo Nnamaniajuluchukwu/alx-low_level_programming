@@ -14,8 +14,10 @@ int main(void)
 	{
 		putchar(i);
 		if (i != 57)
+		{
 			putchar(j);
 			putchar(32);
+		}
 	}
 	putchar('\n');
 	return (0);
