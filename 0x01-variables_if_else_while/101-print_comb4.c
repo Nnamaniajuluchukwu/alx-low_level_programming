@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - print combination 
+ * main - print combination
  *
  * Return: 0
  */
 
 int main(void)
 {
-	int i,j,k;
+	int i, j, k;
 
 	for (i = 0; i <= 7; i++)
 	{
@@ -18,9 +18,9 @@ int main(void)
 			{
 				if (k > j && j > i)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
 
 					if (!(i == 7 && k == 9))
 					{
