@@ -1,1 +1,14 @@
-VimCrypt~03!bSf?¸ô¼£Ÿ‚7§ì"ÈZÕSÍ'öÇ¨4¯Áë>_3_ÿkCÚy™ÒÇÇAØÏ“–‚Lß«ùÔÖ™¸›7é0¨R«u'‰£¨Ó.Âú<æL×øû·Ææ“¨Õñ*&D?OûW¹´ıÌÓf•>jTî=uM¼¡õ½¢°×&Å‚t™ÁÍæ5¼2Ÿ9ÊöÛDI´­6_È@ô¯è#æk`<ïFmÚ¿ª¼e¡ß³ı¦Ajè.¹
+#include "main.h"
+
+/**
+ * print_alphabet - prints alphabet
+ */
+
+void print_alphabet(void)
+{
+	char i;
+
+	for (i = 'a'; i >= 'z'; i++)
+		_putchar(i);
+	_putchar(i);
+}
