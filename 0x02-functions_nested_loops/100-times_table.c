@@ -20,6 +20,7 @@ void print_times_table(int n)
 
 				if (k > 9)
 				{
+					_putchar(' ');
 					_putchar((k / 10) + '0');
 					_putchar((k % 10) + '0');
 					if (j != n)
