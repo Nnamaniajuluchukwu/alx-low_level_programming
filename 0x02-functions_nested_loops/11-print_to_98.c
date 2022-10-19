@@ -8,7 +8,7 @@
 
 void lower(int p)
 {
-	for (; p <= 98; n++)
+	for (; p <= 98; p++)
 	{
 		if (p > 9)
 		{
@@ -37,12 +37,12 @@ void lower(int p)
 
 void upper(int p)
 {
-	for (; n >= 98; n--)
+	for (; n >= 98; p--)
 	{
 		if (n > 99)
 		{
 			_putchar((n / 100) + '0');
-			_putchar((n / 10) % 10) + '0');
+			_putchar(((n / 10) % 10) + '0');
 			_putchar((n % 10) + '0');
 			if (n != 98)
 			{
