@@ -37,14 +37,14 @@ void lower(int p)
 
 void upper(int p)
 {
-	for (; n >= 98; p--)
+	for (; p >= 98; p--)
 	{
-		if (n > 99)
+		if (p > 99)
 		{
-			_putchar((n / 100) + '0');
-			_putchar(((n / 10) % 10) + '0');
-			_putchar((n % 10) + '0');
-			if (n != 98)
+			_putchar((p / 100) + '0');
+			_putchar(((p / 10) % 10) + '0');
+			_putchar((p % 10) + '0');
+			if (p != 98)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -52,8 +52,8 @@ void upper(int p)
 		}
 		else
 		{
-			_putchar((n / 10) + '0');
-			_putchar((n % 10) + '0');
+			_putchar((p / 10) + '0');
+			_putchar((p % 10) + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
@@ -73,7 +73,7 @@ void print_to_98(int n)
 		lower(n);
 	else
 	{
-		upper(p);
+		upper(n);
 	}
 	_putchar('\n');
 }
