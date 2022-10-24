@@ -8,7 +8,7 @@
 
 void puts_string(char *str)
 {
-	int i, len;
+	int i, j, len;
 
 	i = 0;
 	while (str[i])
