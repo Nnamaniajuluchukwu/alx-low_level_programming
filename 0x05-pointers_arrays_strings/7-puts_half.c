@@ -6,18 +6,18 @@
  * @str: string
  */
 
-void puts_string(char *str)
+void puts_half(char *str)
 {
 	int i, j, len;
 
 	i = 0;
 	while (str[i])
-		i++;
+		++i;
 
-	len = i - 1;
+	len = i;
 
 	for (j = len / 2; j < len; j++)
-		_putchar(str[i]);
+		_putchar(str[j]);
 
 	_putchar('\n');
 }
