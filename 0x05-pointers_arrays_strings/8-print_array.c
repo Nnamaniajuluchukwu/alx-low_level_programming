@@ -7,6 +7,8 @@
  * @s: array to save
  */
 
+void rev_string(int n, char *s);
+
 void _itoa(int n, char *s)
 {
 	int i, sign;
