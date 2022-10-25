@@ -37,7 +37,9 @@ void _itoa(int n, char *s)
 {
 	int i, sign;
 
-	if ((sign = n) < 0)
+	sign = n;
+
+	if (sign < 0)
 		n = -n;
 
 	i = 0;
@@ -55,7 +57,7 @@ void _itoa(int n, char *s)
  * print_array - prints n airray.
  *
  * @a: array
- * @n: number 
+ * @n: number
  */
 
 void print_array(int *a, int n)
@@ -68,7 +70,8 @@ void print_array(int *a, int n)
 		_itoa(a[i], s);
 		for (j = 0; s[j]; j++)
 			_putchar(s[j]);
-		_putchar('\n');
+		_putchar(',');
+		_putchar(' ');
 	}
 	_putchar('\n');
 }
