@@ -1,13 +1,37 @@
 #include "main.h"
 
 /**
+ * rev_string - reverse string
+ *
+ * @s: string
+ */
+
+void rev_string(char *s)
+{
+	int i, j, len;
+	char temp;
+
+	i = 0;
+
+	while (s[i])
+		i++;
+
+	len = i;
+
+	for (j = 0; j < (len / 2); j++)
+	{
+		temp = s[j];
+		s[j] = s[len - j - 1];
+		s[len - j - 1] = temp;
+	}
+}
+
+/**
  * _itoa - convert integer to string.
  *
  * @n: integer
  * @s: array to save
  */
-
-void rev_string(char *s);
 
 void _itoa(int n, char *s)
 {
