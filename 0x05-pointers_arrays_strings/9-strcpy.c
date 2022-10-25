@@ -24,4 +24,6 @@ char *_strcpy(char *dest, char *src)
 	for (k = 0; k < j; k++)
 		dest[i++] = src[k];
 	_putchar('\0');
+
+	return (dest);
 }
