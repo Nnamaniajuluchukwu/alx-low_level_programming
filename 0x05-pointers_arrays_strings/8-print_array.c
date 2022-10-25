@@ -70,8 +70,11 @@ void print_array(int *a, int n)
 		_itoa(a[i], s);
 		for (j = 0; s[j]; j++)
 			_putchar(s[j]);
-		_putchar(',');
-		_putchar(' ');
+		if (i != (n - 1))
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
 	_putchar('\n');
 }
