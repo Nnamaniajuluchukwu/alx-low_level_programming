@@ -6,7 +6,7 @@
  *
  * @s: the pointer string.
  *
- * Return: 0 if not and 1 if it is.
+ * Return: 0 if not or 1 if it is.
  */
 
 int is_num(char *s)
@@ -25,7 +25,7 @@ int is_num(char *s)
 
 /**
  * main - add arguments
- 
+ *
  * @argc: count arguments.
  * @argv: variable arguments.
  *
@@ -42,7 +42,6 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	/* ./app 1 2 3 5 6 */
 	for (i = 1; i < argc; i++)
 	{
 		if (is_num(argv[i]))
@@ -51,10 +50,11 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			puts("Error\n");
+			puts("Error");
 			return (1);
 		}
 	}
 	printf("%d\n", result);
+
 	return (0);
 }
