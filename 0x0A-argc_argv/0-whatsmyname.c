@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	char *s;
 
-	s = argv[1];
+	s = argv[argc - 1];
 
 	printf("%s\n", s);
 
