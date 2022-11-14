@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 
 /**
  * init_dog - initialize the struct dog params.
@@ -12,6 +13,10 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	struct dog *p;
+
+	p = malloc(sizeof(struct dog));
+	if (p == NULL)
+		return (NULL);
 
 	p = d;
 
