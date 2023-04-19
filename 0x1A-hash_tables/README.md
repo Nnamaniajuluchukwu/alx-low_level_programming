@@ -1,1 +1,1 @@
-### Hash function in C
+### Hash function and table in C
